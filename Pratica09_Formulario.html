@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Orçamento</title>
+</head>
+
+<body>
+    <h1 align="center">Solicitação de orçamento</h1>
+    <hr style="width:20%">
+    <form method="POST" action="/contato/cotar" style="margin-left:40.8%;">
+        <p>
+        <fieldset style="width: 100px;">
+            <label for="txtNomeDoDono">Nome do Dono</label><br>
+            <input type="text" name="NomeDoDono" id="txtNomeDoDono" placeholder="Nome Completo" style="width:300px;">
+            </p>
+            <p>
+                <label for="slctAnimal">Tipo de Animal</label><br>
+                <select name="Animal" id="slctAnimal">
+                    <option value="CO">Coelho</option>
+                    <option value="CA" selected>Cachorro</option>
+                    <option value="GA">Gato</option>
+                    <option value="PA">Pássaro</option>
+
+                </select>
+
+            </p>
+            <p>
+                <label for="txtServiço">Tipo de Serviço</label><br>
+                <input type="text" name="Serviço" id="txtServiço" placeholder="Ex.: Tosa, banho, vacina..." style="width:300px;">
+            </p>
+            <p>
+                <label for="dtlHorario"> Horário de Agendamento (Data e Horário)</label><br>
+                <input type="datetime-local" id="dtlHorario" name="Horário">
+            </p>
+            <p>
+                <label for="txtObservações">Observações</label><br>
+                <textarea name="Observações" id="txtObservações" cols="30" rows="10"
+                    placeholder="Digite aqui informações adicionais sobre seu bichinho"></textarea>
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar Tudo">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
